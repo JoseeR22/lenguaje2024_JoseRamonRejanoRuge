@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero Flex</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .tamanyo {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            top: 60px;
+
+        }
+
+        .tablero {
+            width: 800px;
+            height: 800px;
+            border: 1px solid black;
+            position: relative;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .blanca {
+            background-color: whitesmoke;
+        }
+
+        .negro {
+            background-color: black;
+        }
+
+        .casilla {
+            width: 200px;
+            height: 200px;
+
+        }
+
+        .fila {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Diseño Flexible</h1>
+
+
+    <div class="tablero">
+
+        <div class="fila">
+            <div class="casilla blanca"></div>
+            <div class="casilla negro"></div>
+            <div class="casilla blanca"></div>
+            <div class="casilla negro"></div>
+        </div>
+
+        <div class="fila">
+            <div class="casilla negro"></div>
+            <div class="casilla blanca"><img class="tamanyo" src="/imagenes/torre.png" alt="torre"></div>
+            <div class="casilla negro"></div>
+            <div class="casilla blanca"></div>
+
+        </div>
+        <div class="fila">
+            <div class="casilla blanca"></div>
+            <div class="casilla negro"></div>
+            <div class="casilla blanca"></div>
+            <div class="casilla negro"></div>
+
+        </div>
+        <div class="fila">
+            <div class="casilla negro"></div>
+            <div class="casilla blanca"></div>
+            <div class="casilla negro"></div>
+            <div class="casilla blanca"></div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>

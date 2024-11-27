@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero de Ajedrez</title>
+    <style>
+        /* Estilos para centrar el tablero y darle diseño */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilos del tablero */
+        .chessboard {
+            border: 2px solid #333;
+            border-collapse: collapse;
+        }
+
+        .chessboard td {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Estilos para alternar el color de las celdas */
+        .chessboard .white {
+            background-color: #f0d9b5;
+        }
+
+        .chessboard .black {
+            background-color: #b58863;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table class="chessboard">
+        <tr>
+            <td class="chessboard td white"><img src="/ajedrez/imagenes/torre.png"></td>
+            <td class="chessboard td black"><img src="/ajedrez/imagenes/CaballoBlack.png"></td>
+            <td class="chessboard td white"><img src="/ajedrez/imagenes/AlfilNegro.png.png"></td>
+            <td class="chessboard td black"><img src="/ajedrez/imagenes/ReinaBlack.png"></td>
+            <td class="chessboard td white"><img src="/ajedrez/imagenes/ReyBlack.png"></td>
+            <td class="chessboard td black"><img src="/ajedrez/imagenes/AlfilNegro.png.png"></td>
+            <td class="chessboard td white"><img src="/ajedrez/imagenes/CaballoBlack.png"></td>
+            <td class="chessboard td black"><img src="/ajedrez/imagenes/torre.png"></td>
+        </tr>
+
+        <tr>
+            <td class="chessboard td black"><img src="/ajedrez/imagenes/PeonBlack.png"></td>
+            <td class="chessboard td white"><img src="/ajedrez/imagenes/PeonBlack.png"> </td>
+            <td class="chessboard td white"> <img src="/ajedrez/imagenes/PeonBlack.png"></td>
+            <td class="chessboard td white"><img src="/ajedrez/imagenes/PeonBlack.png"> </td>
+            <td class="chessboard td black"><img src="/ajedrez/imagenes/PeonBlack.png"></td>
+            <td class="chessboard td white"><img src="/ajedrez/imagenes/PeonBlack.png"></td>
+            <td class="chessboard td black"><img src="/ajedrez/imagenes/PeonBlack.png"></td>
+            <td class="chessboard td white"><img src="/ajedrez/imagenes/PeonBlack.png"></td>
+           
+        </tr>
+
+        <tr>
+            <td class="chessboard td white"></td>
+            <td class="chessboard td black"></td>
+            <td class="chessboard td white"></td>
+            <td class="chessboard td black"></td>
+            <td class="chessboard td white"></td>
+            <td class="chessboard td black"></td>
+            <td class="chessboard td white"></td>
+            <td class="chessboard td black"></td>
+        </tr>
+
+        <tr>
+            <td class="chessboard td black"></td>
+            <td class="chessboard td white"></td>
+            <td class="chessboard td black"></td>
+            <td class="chessboard td white"></td>
+            <td class="chessboard td black"></td>
+            <td class="chessboard td white"></td>
+            <td class="chessboard td black"></td>
+            <td class="chessboard td white"></td>
+        </tr>
+
+        <tr>
+            <td class="chessboard td white"></td>
+            <td class="chessboard td black"></td>
+            <td class="chessboard td white"></td>
+            <td class="chessboard td black"></td>
+            <td class="chessboard td white"></td>
+            <td class="chessboard td black"></td>
+            <td class="chessboard td white"></td>
+            <td class="chessboard td black"></td>
+        </tr>
+
+        <tr>
+            <td class="chessboard td black"></td>
+            <td class="chessboard td white"></td>
+            <td class="chessboard td black"></td>
+            <td class="chessboard td white"></td>
+            <td class="chessboard td black"></td>
+            <td class="chessboard td white"></td>
+            <td class="chessboard td black"></td>
+            <td class="chessboard td white"></td>
+        </tr>
+
+        <tr>
+            <td class="chessboard td white"><img src="/ajedrez/imagenes/PeonWhite.png"></td>
+            <td class="chessboard td black"><img src="/ajedrez/imagenes/PeonWhite.png"></td>
+            <td class="chessboard td white"><img src="/ajedrez/imagenes/PeonWhite.png"></td>
+            <td class="chessboard td black"><img src="/ajedrez/imagenes/PeonWhite.png"></td>
+            <td class="chessboard td white"><img src="/ajedrez/imagenes/PeonWhite.png"></td>
+            <td class="chessboard td black"><img src="/ajedrez/imagenes/PeonWhite.png"></td>
+            <td class="chessboard td white"><img src="/ajedrez/imagenes/PeonWhite.png"></td>
+            <td class="chessboard td black"><img src="/ajedrez/imagenes/PeonWhite.png"></td>
+        </tr>
+
+        <tr>
+            <td class="chessboard td black"><img src="/ajedrez/imagenes/TorreWhite.png"></td>
+            <td class="chessboard td white"><img src="/ajedrez/imagenes/CaballoWhite.png"></td>
+            <td class="chessboard td black"><img src="/ajedrez/imagenes/AlfilWhite.png"></td>
+            <td class="chessboard td white"><img src="/ajedrez/imagenes/ReinaWhite.png"></td>
+            <td class="chessboard td black"><img src="/ajedrez/imagenes/ReyWhite.png"></td>
+            <td class="chessboard td white"><img src="/ajedrez/imagenes/AlfilWhite.png"></td>
+            <td class="chessboard td black"><img src="/ajedrez/imagenes/CaballoWhite.png"></td>
+            <td class="chessboard td white"><img src="/ajedrez/imagenes/TorreWhite.png"></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

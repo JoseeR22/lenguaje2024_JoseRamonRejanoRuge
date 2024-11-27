@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario_dos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 900px;
+        }
+
+        .contacto-forma {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px #a14e9e;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .contacto-forma h2 {
+            text-align: center;
+            color: #a14e9e;
+        }
+
+        .contacto-forma label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .contacto-forma input,
+        .contacto-forma textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .contacto-forma-textoarea {
+            resize: vertical;
+        }
+
+        .contacto-forma button {
+            width: 100%;
+            padding: 10px;
+            background-color: #a14e9e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contacto-forma-button_dos {
+            background-color: #7d3b7d;
+        }
+
+        .requerido {
+            color: red;
+        }
+
+        .nota {
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="border:2px solid #a14e9e;" class="contacto-forma">
+        <h2>Formulario de contacto</h2>
+        <p>Escríbenos y en breve nos pondremos en contacto contigo</p>
+        <form>
+            <label for="name">Nombre <span class="requerido">*</span></label>
+            <input style=width:380px; type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+
+            <label for="email">Email <span class="required">*</span></label>
+            <input style=width:380px; type="email" id="email" name="email" placeholder="Escribe tu Email" required>
+
+            <label for="phone">Teléfono</label>
+            <input style=width:380px; type="tel" id="phone" name="phone" placeholder="Escribe tu teléfono">
+
+            <label for="website">Sitio web</label>
+            <input style=width:380px; type="url" id="website" name="website" placeholder="Escribe la URL de tu web">
+
+            <label for="subject">Asunto <span class="required">*</span></label>
+            <input style=width:380px; type="text" id="subject" name="subject" placeholder="Escribe un asunto" required>
+
+            <label for="message">Mensaje <span class="required">*</span></label>
+            <textoarea id="message" name="message" rows="4" placeholder="Deja aquí tu comentario..." required></textoarea>
+
+            <button type="submit">ENVIAR</button>
+        </form>
+        <p class="nota">* Los campos son obligatorios.</p>
+    </div>
+
+</body>
+
+</html>

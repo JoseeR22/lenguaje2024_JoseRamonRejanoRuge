@@ -1,0 +1,13 @@
+div{
+    background-color: blueviolet; 
+    width: 80%; height: 250px;
+    align-items: center;
+   padding: 50px;
+   margin:auto
+   
+}
+p{
+    position: relative;
+    right: -900px;
+    tra
+}

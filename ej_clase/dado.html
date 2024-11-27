@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        header,
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+            width: 100%;
+
+
+        }
+
+        .tablero {
+            width: 800px;
+            height: 800px;
+            position: relative;
+            top: 120px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .punto {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: black;
+            box-shadow: 0 0 5px black;
+        }
+
+        .border {
+            background-color: darkgrey;
+            border: solid 1px black;
+            border-radius: 10px;
+            width: 215px;
+            height: 215px;
+            align-items: center;
+            box-shadow: 0 0 20px grey;
+
+        }
+
+        header {
+            top: 0%;
+            padding: 20px;
+            position: absolute;
+        }
+
+
+        div {
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+
+        .dado {
+            background-color: white;
+            grid-template-columns: auto auto auto;
+            display: grid;
+            align-items: center;
+            margin: 3%;
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+
+        }
+
+        .fila {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .hueco {
+            background-color: white;
+            height: 50px;
+            width: 50px;
+        }
+
+        footer {
+            padding: 20px;
+        }
+
+
+
+
+        body,
+        html {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Dado</h1>
+    </header>
+    <main>
+        <div class="tablero">
+            <div class="fila">
+
+
+
+                <div class="border">
+                    <div class="dado">
+                        <div>
+                            <div class="hueco"></div>
+                            <div class="hueco"></div>
+                            <div class="hueco"></div>
+                        </div>
+                        <div>
+                            <div class="hueco"></div>
+                            <div class="punto"></div>
+                            <div class="hueco"></div>
+                        </div>
+                        <div>
+                            <div class="hueco"></div>
+                            <div class="hueco"></div>
+                            <div class="hueco"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border">
+                    <div class="dado">
+                        <div>
+                            <div class="punto"></div>
+                            <div class="hueco"></div>
+                            <div class="hueco"></div>
+                        </div>
+                        <div>
+                            <div class="hueco"></div>
+                            <div class="hueco"></div>
+                            <div class="hueco"></div>
+                        </div>
+                        <div>
+                            <div class="hueco"></div>
+                            <div class="hueco"></div>
+                            <div class="punto"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border">
+                    <div class="dado">
+                        <div>
+                            <div class="punto"></div>
+                            <div class="hueco"></div>
+                            <div class="hueco"></div>
+                        </div>
+                        <div>
+                            <div class="hueco"></div>
+                            <div class="punto"></div>
+                            <div class="hueco"></div>
+                        </div>
+                        <div>
+                            <div class="hueco"></div>
+                            <div class="hueco"></div>
+                            <div class="punto"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+
+                <div class="border">
+                    <div class="dado">
+                        <div>
+                            <div class="punto"></div>
+                            <div class="hueco"></div>
+                            <div class="punto"></div>
+                        </div>
+                        <div>
+                            <div class="hueco"></div>
+                            <div class="hueco"></div>
+                            <div class="hueco"></div>
+                        </div>
+                        <div>
+                            <div class="punto"></div>
+                            <div class="hueco"></div>
+                            <div class="punto"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border">
+                    <div class="dado">
+                        <div>
+                            <div class="punto"></div>
+                            <div class="hueco"></div>
+                            <div class="punto"></div>
+                        </div>
+                        <div>
+                            <div class="hueco"></div>
+                            <div class="punto"></div>
+                            <div class="hueco"></div>
+                        </div>
+                        <div>
+                            <div class="punto"></div>
+                            <div class="hueco"></div>
+                            <div class="punto"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border">
+                    <div class="dado">
+                        <div>
+                            <div class="punto"></div>
+                            <div class="punto"></div>
+                            <div class="punto"></div>
+                        </div>
+                        <div>
+                            <div class="hueco"></div>
+                            <div class="hueco"></div>
+                            <div class="hueco"></div>
+                        </div>
+                        <div>
+                            <div class="punto"></div>
+                            <div class="punto"></div>
+                            <div class="punto"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+    <footer>José Ramón</footer>
+</body>
+
+</html>

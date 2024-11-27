@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+        <meta charset="UTF-8">
+        <title>Formulario_uno</title>
+        <style>
+                .separacion {
+                        margin-top: 10px;
+                        padding: 5px;
+                }
+
+                .obligatorios {
+                        color: red;
+                        position: relative;
+                        right: -430px;
+                }
+
+                .moverparent {
+                        position: relative;
+                        right: -470px;
+                        top: -40px;
+                }
+
+                .moverparent-uno {
+                        position: relative;
+                        right: -470px;
+                        top: -160px;
+                }
+        </style>
+</head>
+
+<body style="width:1000px ; margin: auto">
+        <img style="width: 60px;height: -30px;position: relative; bottom: -70px;"
+                src="/formulario_uno/imagenes/Libretalapiz.avif">;
+        <h1 style="position: relative;right: -85px;font-size: 26px;">FORMULARIO DE INSCRIPCIÓN AL SISTEMA</h1>
+        <form name="formulario" action="proceso.php" method="post"> </form>
+        <p class="obligatorios">Todos los campos son obligatorios</p>
+        <p>
+                <label for="nombre">Nombres:<input
+                                style="border: 2px solid black;width:500px; position: relative; left: 82px;"
+                                class="separacion" type="text" name="nombre" required></label>
+                <br>
+                <label> Apellidos: <input
+                                style="border: 2px solid black;width:500px; padding: 5px; margin-top: 10px; position: relative; right: -75px; "
+                                type="text" name="apellidos" required></label>
+                <br>
+                <label> Empresa/Institución: <input
+                                style="border: 2px solid black;width:500px; padding: 5px; margin-top: 10px; position: relative; right: -10px; "
+                                type="text" name="apellidos" required></label>
+                <br>
+                <label> Ámbito de la empresa: <input
+                                style="border: 2px solid black;width:500px; padding: 5px; margin-top: 10px; position: relative; right: 1px; "
+                                type="text" name="apellidos" required></label>
+                <br>
+                <label> Cargo: <input
+                                style="border: 2px solid black;width:500px; padding: 5px; margin-top: 10px; position: relative; right: -101px; "
+                                type="text" name="apellidos" required></label>
+                <br>
+                <label> Nombre de usuario: <input
+                                style="border: 2px solid black;width:300px; padding: 5px; margin-top: 10px; position: relative; right: -17px; "
+                                type="text" name="apellidos" required></label>
+        <p class="moverparent">(Nombre con el que se identificará dentro del sistema)</p>
+        <br>
+        <label>
+                <p style="position: relative; right: 5px;top: -65px;">Contraseña:</p> <input
+                        style="border: 2px solid black;width:300px; padding: 5px; margin-top: 10px; position: relative; right: -148px; bottom: 118px; "
+                        type="text" name="apellidos" required>
+        </label>
+        <p class="moverparent-uno">(Procure utilizar combinaciones alfanuméricas) </p>
+        <br>
+        <label>
+                <p style="position: relative;right: 5px;top: -180px;">Repita contraseña:</p> <input
+                        style="border: 2px solid black;width:300px; padding: 5px; margin-top: 10px; position: relative; right: -148px;top: -235px; "
+                        type="text" name="apellidos" required>
+        </label>
+        <br>
+        <label>
+                <p style="position: relative;right: 8px;top: -235px;">Correo electrónico:</p> <input
+                        style="border: 2px solid black;width:300px; padding: 5px; margin-top: 10px; position: relative; right: -148px;bottom: 282px; "
+                        type="text" name="apellidos" required>
+        </label>
+
+        </p>

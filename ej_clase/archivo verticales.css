@@ -1,0 +1,106 @@
+.nigeria {
+    display: flex;
+}
+.nigeria div {
+    flex: 1;
+    height: 100%;
+}
+.nigeria .verde {
+    background-color: green;
+}
+.nigeria .blanco {
+    background-color: white;
+}
+
+.francia {
+    display: flex;
+}
+.francia div {
+    flex: 1;
+    height: 100%;
+}
+.francia .azul {
+    background-color: blue;
+}
+.francia .blanco {
+    background-color: white;
+}
+.francia .rojo {
+    background-color: red;
+}
+
+.italia {
+    display: flex;
+}
+.italia div {
+    flex: 1;
+    height: 100%;
+}
+.italia .verde {
+    background-color: green;
+}
+.italia .blanco {
+    background-color: white;
+}
+.italia .rojo {
+    background-color: red;
+}
+
+.mali {
+    width: 250px;
+    height: 150px;
+    display: flex;
+}
+
+.mali div {
+    flex: 1;
+    height: 100%;
+}
+
+.mali .verde {
+    background-color: #14B53A; 
+}
+
+.mali .amarillo {
+    background-color: #FFD100; 
+}
+
+.mali .rojo {
+    background-color: #CE1126; 
+}
+
+.peru {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+.peru .roja {
+    flex: 1;
+    background-color: #D91C25; 
+}
+
+.peru .blanca {
+    flex: 1;
+    background-color: #FFFFFF; 
+}
+
+.rumania {
+    display: flex;
+}
+.rumania div {
+    flex: 1;
+    height: 100%;
+}
+.rumania .verde {
+    background-color: rgb(10, 68, 155);
+}
+.rumania .blanco {
+    background-color: rgb(207, 173, 24);
+}
+.rumania .rojo {
+    background-color: red;
+}
+
+

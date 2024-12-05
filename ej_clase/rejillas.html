@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banderas del Mundo</title>
+    <link rel="stylesheet" href="/ej_clase/plantilla.css">
+    <style>
+        .bandera {
+            box-sizing: content-box;
+            width: 250px;
+            height: 150px;
+            border: 1px solid black;
+            margin: 0;
+            position: relative;
+        }
+
+        /* Ejemplo de banderas */
+
+        /* Francia */
+        .francia {
+            display: flex;
+        }
+        .francia div {
+            flex: 1;
+            height: 100%;
+        }
+        .francia .azul {
+            background-color: blue;
+        }
+        .francia .blanco {
+            background-color: white;
+        }
+        .francia .rojo {
+            background-color: red;
+        }
+
+        /* Alemania */
+        .alemania {
+            display: flex;
+            flex-direction: column;
+        }
+        .alemania .negro {
+            background-color: black;
+            flex: 1;
+        }
+        .alemania .rojo {
+            background-color: red;
+            flex: 1;
+        }
+        .alemania .amarillo {
+            background-color: yellow;
+            flex: 1;
+        }
+
+        /* Italia */
+        .italia {
+            display: flex;
+        }
+        .italia div {
+            flex: 1;
+            height: 100%;
+        }
+        .italia .verde {
+            background-color: green;
+        }
+        .italia .blanco {
+            background-color: white;
+        }
+        .italia .rojo {
+            background-color: red;
+        }
+
+        /* Japón */
+        .japon {
+            background-color: white;
+            position: relative;
+        }
+        .japon::before {
+            content: "";
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            background-color: red;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Argentina */
+        .argentina {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .argentina .celeste {
+            background-color: #74ACDF;
+            flex: 1;
+        }
+        .argentina .blanco {
+            background-color: white;
+            flex: 1;
+        }
+        .argentina::before {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: gold;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Nigeria */
+        .nigeria {
+            display: flex;
+        }
+        .nigeria div {
+            flex: 1;
+            height: 100%;
+        }
+        .nigeria .verde {
+            background-color: green;
+        }
+        .nigeria .blanco {
+            background-color: white;
+        }
+
+        /* Brasil */
+        .brasil {
+            background-color: green;
+            position: relative;
+        }
+        .brasil::before {
+            content: "";
+            position: absolute;
+            width: 200px;
+            height: 80px;
+            background-color: yellow;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+        .brasil::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+           /* Estados Unidos */
+           .eeuu {
+            background: linear-gradient(90deg, #B22234 50%, white 50%);
+        }
+        .eeuu::before {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 75px;
+            background-color: blue;
+            top: 0;
+            left: 0;
+        }
+
+        /* Reino Unido */
+        .uk {
+            background: red;
+            position: relative;
+        }
+
+        /* Canadá */
+        .canada {
+            /* Haz lo mismo para cada patrón. */
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Banderas del Mundo</h1>
+    </header>
+    <main>
+        <div>
+            <h2>Francia</h2>
+            <div class="bandera francia">
+                <div class="azul"></div>
+                <div class="blanco"></div>
+                <div class="rojo"></div>
+            </div>
+        </div>
+        <div>
+            <h2>Alemania</h2>
+            <div class="bandera alemania">
+                <div class="negro"></div>
+                <div class="rojo"></div>
+                <div class="amarillo"></div>
+            </div>
+        </div>
+        <div>
+            <h2>Italia</h2>
+            <div class="bandera italia">
+                <div class="verde"></div>
+                <div class="blanco"></div>
+                <div class="rojo"></div>
+            </div>
+        </div>
+        <div>
+            <h2>Japón</h2>
+            <div class="bandera japon"></div>
+        </div>
+        <div>
+            <h2>Argentina</h2>
+            <div class="bandera argentina">
+                <div class="celeste"></div>
+                <div class="blanco"></div>
+                <div class="celeste"></div>
+            </div>
+        </div>
+        <div>
+            <h2>Nigeria</h2>
+            <div class="bandera nigeria">
+                <div class="verde"></div>
+                <div class="blanco"></div>
+                <div class="verde"></div>
+            </div>
+        </div>
+        <div>
+            <h2>Brasil</h2>
+            <div class="bandera brasil"></div>
+        </div>
+        <!-- Agrega más banderas aquí -->
+    </main>
+    <footer>
+        <p>José Ramón</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+
+
+.alemania {
+    display: flex;
+    flex-direction: column;
+}
+.alemania .negro {
+    background-color: black;
+    flex: 1;
+}
+.alemania .rojo {
+    background-color: red;
+    flex: 1;
+}
+.alemania .amarillo {
+    background-color: yellow;
+    flex: 1;
+}
+
+
+
+.espanya {
+    display: flex;
+    flex-direction: column;
+}
+.espanya .rojo {
+    background-color: red;
+    flex: 1;
+}
+.espanya .amarillo {
+    background-color: yellow;
+    flex: 2;
+}
+
+.letonia {
+    display: flex;
+    flex-direction: column;
+}
+.letonia .rojo {
+    background-color: #9E1B34;
+    flex: 1;
+}
+.letonia .blanco {
+    background-color: white;
+    flex: 1;
+}
+
+.lituania {
+    display: flex;
+    flex-direction: column;
+}
+.lituania .amarillo {
+    background-color: yellow;
+    flex: 1;
+}
+.lituania .verde {
+    background-color: green;
+    flex: 1;
+}
+.lituania .rojo {
+    background-color: red;
+    flex: 1;
+}
+
+.monaco {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.monaco .rojo {
+    flex: 1;
+    background-color: #CE1126; 
+}
+
+.monaco .blanco {
+    flex: 1;
+    background-color: #FFFFFF; 
+}
+
+
+.paises-bajos {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.paises-bajos .rojo {
+    flex: 1;
+    background-color: #c12626; 
+}
+
+.paises-bajos .blanco {
+    flex: 1;
+    background-color: #FFFFFF; 
+}
+
+.paises-bajos .azul {
+    flex: 1;
+    background-color: #21468B; 
+}
+
+.polonia {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.polonia .blanca {
+    flex: 1;
+    background-color: #FFFFFF; 
+}
+
+
+.polonia .roja {
+    flex: 1;
+    background-color: #DC143C; 
+}
+
+.rusia {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.rusia .azul {
+    background-color: #2218e0;
+    flex: 1;
+}
+.rusia .blanco {
+    background-color: white;
+    flex: 1;
+}
+.rusia .rojo {
+    background-color: rgb(243, 7, 7);
+    flex: 1;
+}
+
+.tailandia {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tailandia .roja {
+    flex: 1;
+    background-color: #E70010; 
+}
+
+
+.tailandia .blanca {
+    flex: 1;
+    background-color: #FFFFFF; 
+}
+
+
+.tailandia .azul {
+    flex: 2; 
+    background-color: #1C3D7C; 
+}
+
+
+

@@ -1,0 +1,160 @@
+.marruecos {
+    width: 250px;
+    height: 150px;
+    background-color: #C1272D; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.marruecos .estrella {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: none;
+    clip-path: polygon(
+        50% 0%, 61% 38%, 98% 35%, 68% 57%, 79% 91%,
+        50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 38%
+    );
+    background-color: #006233; 
+}
+.myanmar .estrella {
+    position: relative;
+    left: 85px;
+    bottom: 18px;
+    width: 80px;
+    height: 80px;
+    background: none;
+    clip-path: polygon(
+        50% 0%, 61% 38%, 98% 35%, 68% 57%, 79% 91%,
+        50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 38%
+    );
+    background-color: #ffffff; 
+    z-index: 1;
+    
+}
+
+
+
+.myanmar {
+    width: 250px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.myanmar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 33.33%;
+    background-color: #FFD600; 
+}
+.myanmar .verde {
+    position: absolute;
+    top: 33.33%;
+    left: 0;
+    width: 100%;
+    height: 33.33%;
+    background-color: #3fc920; 
+    
+}
+.myanmar::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 33.33%;
+    background-color: #CE1126; 
+}
+.senegal {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.senegal .verde {
+    flex: 1;
+    background-color: #008D4C; 
+}
+
+
+.senegal .amarillo {
+    flex: 1;
+    background-color: #FCD116;
+    position: relative;
+}
+
+
+.senegal .estrella {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background: none;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    background-color: #008D4C; 
+    transform: translate(-50%, -50%); 
+}
+
+
+.senegal .rojo {
+    flex: 1;
+    background-color: #E2001A; 
+}
+
+.somalia {
+    width: 250px;
+    height: 150px;
+    background-color: #4098c7; 
+    position: relative;
+}
+
+
+.somalia .estrella {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    background: none;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    background-color: #FFFFFF; 
+    transform: translate(-50%, -50%); 
+}
+.vietnam {
+    width: 250px;
+    height: 150px;
+    background-color: #D91D2A; 
+    position: relative;
+}
+
+
+.vietnam .estrella {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    background: none;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    background-color: #ede919; 
+    transform: translate(-50%, -50%);  
+}
+
+
+
+
+

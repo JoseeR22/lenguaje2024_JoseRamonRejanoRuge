@@ -1,0 +1,48 @@
+*{
+    overflow: hidden;
+    text-align: center;
+}
+body{
+   
+    color:rgb(0, 0, 0)
+}
+li{
+    list-style:upper-latin;
+    color:aquamarine;
+    font-size: larger;
+    background-color: rgb(238, 97, 15);
+    border-radius: 50%;
+    margin-bottom: 100px;
+}
+h1{
+    height: 80px;
+    background-color: aliceblue;
+    border: 2px solid salmon;
+    border-radius: 20%;
+    margin-bottom: 100px;
+    
+}
+.position{
+  
+    position: absolute;
+    top: 35px;
+    left: 820px;
+}
+a{
+    color:black;
+}
+footer{
+    
+    position: absolute;
+    bottom:100px;
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    color: aliceblue;
+}
+.position2{
+    
+    position: absolute;
+    top: 25px;
+    left: 880px;
+}

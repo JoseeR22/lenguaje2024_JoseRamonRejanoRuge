@@ -1,0 +1,35 @@
+.uae {
+    width: 250px;
+    height: 150px;
+    display: flex;
+}
+
+
+.uae .roja {
+    width: 25%; 
+    background-color: #f20505;
+}
+
+.uae .derecha {
+    width: 75%; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.uae .verde {
+    flex: 1;
+    background-color: #009639; 
+}
+
+
+.uae .blanca {
+    flex: 1;
+    background-color: #FFFFFF; 
+}
+
+
+.uae .negra {
+    flex: 1;
+    background-color: #000000; 
+}

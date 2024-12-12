@@ -7,30 +7,34 @@
     <title>Miniweb - Archivo 1</title>
 
     <link id="theme" rel="stylesheet" type="text/css"
-        href="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/miniweb/css/claro.css">
+        href="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/miniweb/css/miniwebcss.css">
     <link rel="shortcut icon" href="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/imagenes/LogoJR.png">
 
-
     <script>
-        function tema_activo() {
-            var theme = document.getElementById('theme');
-            var temaGuardado = localStorage.getItem("tema");
-            if (temaGuardado) {
-                theme.setAttribute('href', '/lenguaje2024_JoseRamonRejanoRuge/ej_clase/miniweb' + temaGuardado);
-            }
-        }
+        // script.js
+        const toggleButton = document.getElementById('toggle-theme');
 
-        function cambiatema() {
-            var theme = document.getElementById('theme');
-            if (theme.getAttribute('href') === '/lenguaje2024_JoseRamonRejanoRuge/ej_clase/miniweb/css/claro.css') {
-                theme.setAttribute('href', '/lenguaje2024_JoseRamonRejanoRuge/ej_clase/miniweb/css/oscuro.css');
-                localStorage.setItem('tema', 'css/oscuro.css');
+        // Verificar el tema actual al cargar la página
+        document.addEventListener('DOMContentLoaded', () => {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-theme');
             } else {
-                theme.setAttribute('href', '/lenguaje2024_JoseRamonRejanoRuge/ej_clase/miniweb/css/claro.css');
-                localStorage.setItem('tema', 'css/claro.css');
+                document.body.classList.add('light-theme');
             }
-        }
+        });
+
+        // Cambiar el tema al hacer clic en el botón
+        toggleButton.addEventListener('click', () => {
+            if (document.body.classList.contains('light-theme')) {
+                document.body.classList.replace('light-theme', 'dark-theme');
+                localStorage.setItem('theme', 'dark'); // Guardar preferencia en localStorage
+            } else {
+                document.body.classList.replace('dark-theme', 'light-theme');
+                localStorage.setItem('theme', 'light'); // Guardar preferencia en localStorage
+            }
+        });
     </script>
+
 </head>
 
 <body onload="tema_activo()">

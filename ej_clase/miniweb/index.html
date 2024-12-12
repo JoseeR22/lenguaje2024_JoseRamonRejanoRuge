@@ -1,15 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="/miniweb/css/miniwebcss.css">
-</head>
-<body>
-    <a href="/miniweb/contenido/archivo1.html">archivo1</a>
-    <a href="/miniweb/contenido/archivo2.html">archivo2</a>
-    <a href="/miniweb/contenido/archivo3.html">archivo3</a>
+    <title>Miniweb</title>
+    <link id="theme" rel="stylesheet" type="text/css" href="../miniweb/css/claro.css" />
+    <link rel="shortcut icon" href="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/imagenes/LogoJR.png">
+
     
+    <script>
+        function cambiatema() {
+            var theme = document.getElementById('theme'); 
+            if (theme.getAttribute('href') === '../miniweb/css/claro.css') {
+                theme.setAttribute('href', '../miniweb/css/oscuro.css');
+                localStorage.setItem('tema', '../miniweb/css/oscuro.css');
+            } else {
+                theme.setAttribute('href', '../miniweb/css/claro.css');
+                localStorage.setItem('tema', '../miniweb/css/claro.css');
+            }
+        }
+
+        function tema_activo() {
+            var theme = document.getElementById('theme'); 
+            var temaGuardado = localStorage.getItem("tema");
+            if (temaGuardado) {
+                theme.setAttribute('href', temaGuardado);
+            }
+        }
+    </script>
+
+</head>
+
+<body onload="tema_activo()">
+
+   
+    <header>
+        <img class="logo" src="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/imagenes/LogoJR.png" alt="Logotipo JR">
+        <h1 id="inicioPagina">Bienvenidos a la Miniweb</h1>
+    </header>
+
+   
+    <nav>
+        <ul>
+            <li><a href="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/index.html">Inicio</a></li>
+            <li><button class="cambiotemacolor" id="boton" onclick="cambiatema()">Modo claro/oscuro</button></li>
+        </ul>
+    </nav>
+
+ 
+    <main>
+        <section class="diseño">
+            <div class="enlacescuadrados">
+                <a href="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/miniweb/contenido/archivo1.html">Ir al Archivo 1</a>
+            </div>
+            <div class="enlacescuadrados">
+                <a href="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/miniweb/contenido/archivo2.html">Ir al Archivo 2</a>
+            </div>
+            <div class="enlacescuadrados">
+                <a href="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/miniweb/contenido/archivo3.html">Ir al Archivo 3</a>
+            </div>
+            <div class="enlacescuadrados">
+                <a href="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/miniweb/A.html">Ir al Archivo A</a>
+            </div>
+        </section>
+    </main>
+
+  
+    <div id="boton">
+        <a href="#inicioPagina"><img src="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/imagenes/boton.png" alt="Botón de regreso"></a>
+    </div>
+    <br>
+    <br>
+
+
+    <footer>
+        <p>&copy; José Ramón Rejano Ruge | Mis derechos están reservados</p>
+    </footer>
+
 </body>
+
 </html>

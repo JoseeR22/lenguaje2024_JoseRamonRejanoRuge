@@ -1,14 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="José Ramón Rejano Ruge">
-    <title>archivo1</title>
-    <link rel="stylesheet" href="/lenguaje2024_JoseRamonRejanoRuge/Ejercicios/miniweb/css/miniwebcss.css">
+    <title>Miniweb - Archivo 1</title>
+
+    <link id="theme" rel="stylesheet" type="text/css"
+        href="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/miniweb/css/claro.css">
+    <link rel="shortcut icon" href="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/imagenes/LogoJR.png">
+
+
+    <script>
+        function tema_activo() {
+            var theme = document.getElementById('theme');
+            var temaGuardado = localStorage.getItem("tema");
+            if (temaGuardado) {
+                theme.setAttribute('href', '/lenguaje2024_JoseRamonRejanoRuge/ej_clase/miniweb' + temaGuardado);
+            }
+        }
+
+        function cambiatema() {
+            var theme = document.getElementById('theme');
+            if (theme.getAttribute('href') === '/lenguaje2024_JoseRamonRejanoRuge/ej_clase/miniweb/css/claro.css') {
+                theme.setAttribute('href', '/lenguaje2024_JoseRamonRejanoRuge/ej_clase/miniweb/css/oscuro.css');
+                localStorage.setItem('tema', 'css/oscuro.css');
+            } else {
+                theme.setAttribute('href', '/lenguaje2024_JoseRamonRejanoRuge/ej_clase/miniweb/css/claro.css');
+                localStorage.setItem('tema', 'css/claro.css');
+            }
+        }
+    </script>
 </head>
-<body>
-    <a href="/lenguaje2024_JoseRamonRejanoRuge/Ejercicios/miniweb/index.html">Index</a>
-    
+
+<body onload="tema_activo()">
+
+
+    <header>
+        <img class="logo" src="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/imagenes/LogoJR.png" alt="Logotipo JR">
+        <h1 id="inicioPagina">Archivo 1</h1>
+    </header>
+
+
+    <nav>
+        <ul>
+            <li><a href="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/index.html">Inicio</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <section>
+            <div class="enlacescuadrados">
+                <a href="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/miniweb/index.html">Página principal</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- BOTÓN PARA VOLVER ARRIBA -->
+    <div id="boton">
+        <a href="#inicioPagina"><img src="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/imagenes/boton.png"
+                alt="Botón de regreso"></a>
+    </div>
+
+    <footer>
+        <p>&copy; José Ramón Rejano Ruge | Mis derechos están reservados</p>
+    </footer>
+
+
 </body>
+
 </html>

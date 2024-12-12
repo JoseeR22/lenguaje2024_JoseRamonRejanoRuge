@@ -1,0 +1,66 @@
+/* Archivo styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #de9919;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+.tarea-lista ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tarea-lista li {
+    margin: 0.5rem 0;
+}
+
+.tarea-lista a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    padding: 0.5rem;
+    display: block;
+    border: 2px solid #dca211;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.tarea-lista a:hover {
+    background-color: #de9919;
+    color: white;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

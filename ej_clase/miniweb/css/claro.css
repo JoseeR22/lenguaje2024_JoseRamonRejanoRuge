@@ -2,19 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    width: 1200px; /* Ancho máximo del contenido */
-    margin: auto; /* Centra el contenido */
+    width: 1200px; 
+    margin: auto; 
 }
 
-/* ENCABEZADO */
+
 header {
-    background-color: #002c54;
+    background-color: #000000;
     display: flex;
     align-items: center;
     position: relative;
 }
 
-/* DISEÑO LOGOTIPO */
+
 header img {
     position: absolute;
     left: 50px;
@@ -22,7 +22,7 @@ header img {
     height: auto;
 }
 
-/* DISEÑO LETRAS */
+
 header h1 {
     color: white;
     width: 100%;
@@ -49,16 +49,16 @@ nav ul li a {
     padding: 10px;
 }
 
-/* CONTENIDO PRINCIPAL */
+
 main {
     padding: 20px;
     display: flex;
     justify-content: center;
 }
 
-/* ESTILO DE LOS ENLACES QUE DAN ACCESO A LOS ARCHIVOS */
+/* ESTILO DE LOS ENLACES QUE ENTRAN A LOS ARCHIVOS */
 .enlacescuadrados {
-    background-color: #002c54;
+    background-color: #000000;
     color: #ffffff;
     font-weight: bold; /* Aplica un grosor de fuente */
     font-size: 1.2em; 
@@ -70,30 +70,32 @@ main {
     align-items: center; /* Centra verticalmente el texto */
     justify-content: center; /* Centra horizontalmente el texto */
     border-radius: 10px; /* Redondea las esquinas del cuadro */
-    box-shadow: 2px 2px 10px #000000; /* Agrega una sombra para un efecto de elevación */
+    box-shadow: 2px 2px 10px #000000; /* Agrega una sombra */
 }
 
-/* ESTILO DE LOS ENLACES DENTRO DE LOS CUADROS */
+
 .enlacescuadrados a {
     text-decoration: none; /* Elimina el subrayado del enlace */
     color: #ffffff;
 }
 
 .enlacescuadrados:hover {
-    background-color: #FFA500; /* Cambio de color al pasar el cursor */
+    background-color: #FFA500; /* Cambio de color cuando se pasar el cursor */
     color: white;
 }
 
 /* CAMBIO DE TEMA OSCURO A CLARO */
 .cambiotemacolor {
-    background-color: darkblue;
+    background-color: rgb(255, 255, 255);
     color: white;
-    border: 2px solid white; /* Define el borde de la caja */
+    border: 2px solid rgb(0, 0, 0); 
     padding: 3px;
-    font-size: 16px; /* Define el tamaño de la fuente */
+    font-size: 16px; 
+    position: sticky;
+    top:85%;
 }
 
-/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
+/* BOTÓN PARA VOLVER A SUBIR ARRIBA */
 
 #boton {
     position: fixed;
@@ -114,12 +116,16 @@ main {
 
 footer p{
     background-color: #77777733;
-    color: #FFFFFF;
+    color: #a5a5a5;
     width: 100%;
     text-align: center;
     padding: 5px;
     position: fixed; /* Fija el pie de página en la parte inferior */
-    bottom: 0; /* Elimina la posición en la parte inferior*/
-    left: 0; /* Elimina la alineación a la izquierda*/
+    bottom: 0; 
+    left: 0; 
     margin: 0; /* Elimina el margen del pie de página */
+}
+.solluna{
+    width: 2px;
+    height: 2px;
 }

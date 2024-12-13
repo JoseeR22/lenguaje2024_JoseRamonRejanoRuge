@@ -1,12 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A</title>
-    <link rel="stylesheet" href="../css/miniwebcss.css">
+    <title> Archivo A</title>
+
+    <link id="theme" rel="stylesheet" type="text/css"
+        href="./css/claro.css">
+    <link rel="shortcut icon" href="./imagenes/LogoJR.png">
+
+
+    <script>
+        function tema_activo() {
+            var theme = document.getElementById('theme'); 
+            var temaGuardado = localStorage.getItem("tema");
+            if (temaGuardado) {
+                theme.setAttribute('href', './' + temaGuardado);
+            }
+        }
+
+        function cambiatema() {
+            var theme = document.getElementById('theme');
+            if (theme.getAttribute('href') === './css/claro.css') {
+                theme.setAttribute('href', './css/oscuro.css');
+                localStorage.setItem('tema', 'css/oscuro.css');
+            } else {
+                theme.setAttribute('href', './css/claro.css');
+                localStorage.setItem('tema', 'css/claro.css');
+            }
+        }
+    </script>
 </head>
-<body>
-    <a href="/miniweb/A.html">archivo 3</a>
+
+<body onload="tema_activo()">
+
+
+    <header>
+        <img class="logo" src="./imagenes/LogoJR.png" alt="Logotipo JR">
+        <h1 id="inicioPagina">Archivo A</h1>
+    </header>
+
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><button class="cambiotemacolor" id="boton" onclick="cambiatema()"><img class="solluna" src="./imagenes/sol_luna.png" alt="Cambio de tema"></button></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <section>
+            <div class="enlacescuadrados">
+                <a href="./index.html">Página principal</a>
+            </div>
+        </section>
+    </main>
+
+
+    <div id="boton">
+        <a href="#inicioPagina"><img src="./imagenes/boton.png"
+                alt="Botón de regreso"></a>
+    </div>
+
+
+    <footer>
+        <p>&copy; José Ramón Rejano Ruge | Mis derechos están reservados</p>
+    </footer>
+
 </body>
+
 </html>

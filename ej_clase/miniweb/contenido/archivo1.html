@@ -6,33 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miniweb - Archivo 1</title>
 
-    <link id="theme" rel="stylesheet" type="text/css"
-        href="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/miniweb/css/miniwebcss.css">
-    <link rel="shortcut icon" href="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/imagenes/LogoJR.png">
+    <link id="theme" rel="stylesheet" type="text/css" href="../css/claro.css">
+    <link rel="shortcut icon" href="../imagenes/LogoJR.png">
 
     <script>
-        // script.js
-        const toggleButton = document.getElementById('toggle-theme');
-
-        // Verificar el tema actual al cargar la página
-        document.addEventListener('DOMContentLoaded', () => {
-            if (localStorage.getItem('theme') === 'dark') {
-                document.body.classList.add('dark-theme');
-            } else {
-                document.body.classList.add('light-theme');
+        function tema_activo() {
+            var theme = document.getElementById('theme');
+            var temaGuardado = localStorage.getItem("tema");
+            if (temaGuardado) {
+                theme.setAttribute('href', '../' + temaGuardado);
             }
-        });
+        }
 
-        // Cambiar el tema al hacer clic en el botón
-        toggleButton.addEventListener('click', () => {
-            if (document.body.classList.contains('light-theme')) {
-                document.body.classList.replace('light-theme', 'dark-theme');
-                localStorage.setItem('theme', 'dark'); // Guardar preferencia en localStorage
+        function cambiatema() {
+            var theme = document.getElementById('theme');
+            if (theme.getAttribute('href') === '../css/claro.css') {
+                theme.setAttribute('href', '../css/oscuro.css');
+                localStorage.setItem('tema', 'css/oscuro.css');
             } else {
-                document.body.classList.replace('dark-theme', 'light-theme');
-                localStorage.setItem('theme', 'light'); // Guardar preferencia en localStorage
+                theme.setAttribute('href', '../css/claro.css');
+                localStorage.setItem('tema', 'css/claro.css');
             }
-        });
+        }
     </script>
 
 </head>
@@ -41,14 +36,15 @@
 
 
     <header>
-        <img class="logo" src="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/imagenes/LogoJR.png" alt="Logotipo JR">
+        <img class="logo" src="../imagenes/LogoJR.png" alt="Logotipo JR">
         <h1 id="inicioPagina">Archivo 1</h1>
     </header>
 
 
     <nav>
         <ul>
-            <li><a href="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/index.html">Inicio</a></li>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><button class="cambiotemacolor" id="boton" onclick="cambiatema()"><img class="solluna" src="../imagenes/sol_luna.png" alt="Cambio de tema"></button></li>
         </ul>
     </nav>
 
@@ -56,15 +52,14 @@
     <main>
         <section>
             <div class="enlacescuadrados">
-                <a href="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/miniweb/index.html">Página principal</a>
+                <a href="../index.html">Página principal</a>
             </div>
         </section>
     </main>
 
     <!-- BOTÓN PARA VOLVER ARRIBA -->
     <div id="boton">
-        <a href="#inicioPagina"><img src="/lenguaje2024_JoseRamonRejanoRuge/ej_clase/imagenes/boton.png"
-                alt="Botón de regreso"></a>
+        <a href="#inicioPagina"><img src="../imagenes/boton.png" alt="Botón de regreso"></a>
     </div>
 
     <footer>

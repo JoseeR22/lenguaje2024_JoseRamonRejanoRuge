@@ -12,9 +12,9 @@ body {
     /* Centra el contenido */
 }
 
-/* ENCABEZADO */
+
 header {
-    background-color: #FF8C00;
+    background-color: #ff7300;
     display: flex;
     align-items: center;
     position: relative;
@@ -69,20 +69,20 @@ main {
     font-weight: bold;
     /* Aplica un grosor de fuente */
     font-size: 1.2em;
-    /* Aumenta el tamaño de la fuente */
+
     width: 200px;
     height: 200px;
     margin: 20px;
     padding: 20px;
     display: flex;
     align-items: center;
-    /* Centra verticalmente el texto dentro del cuadro */
+    /* Centra verticalmente el texto del cuadro */
     justify-content: center;
-    /* Centra horizontalmente el texto dentro del cuadro */
+    /* Centra horizontalmente el texto del cuadro */
     border-radius: 10px;
     /* Redondea las esquinas del cuadro */
     box-shadow: 2px 2px 10px #000000;
-    /* Agrega una sombra para un efecto de elevación */
+    /* Agrega una sombra */
 }
 
 .enlacescuadrados a {
@@ -92,21 +92,23 @@ main {
 }
 
 .enlacescuadrados:hover {
-    background-color: #FF8C00;
+    background-color: #ff7300;
     /* Cambio de color al pasar el cursor */
     color: white;
 }
 
 .cambiotemacolor {
-    background-color: #FF8C00;
+    background-color: #ff7300;
     color: white;
     border: 2px solid white;
     padding: 3px;
     font-size: 16px;
+    position: sticky;
+    top:85%;
 }
 
 
-/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
+/* BOTÓN PARA VOLVER PARA ARRIBA */
 
 #boton {
     position: fixed;
@@ -116,7 +118,8 @@ main {
     height: 60px;
     border-radius: 50%;
     overflow: hidden;
-    /* Esto asegura que la imagen se mantenga redonda */
+    background-color:white
+   
 }
 
 #boton img {
@@ -134,11 +137,13 @@ footer p {
     text-align: center;
     padding: 5px;
     position: fixed;
-    /* Fija el pie de página en la parte inferior */
     bottom: 0;
-    /* Elimina la posición en la parte inferior*/
     left: 0;
-    /* Elimina la alineación a la izquierda*/
     margin: 0;
-    /* Elimina el margen del pie de página */
+
+}
+
+.solluna{
+    width: 2px;
+    height: 2px;
 }

@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+
+
+* {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 33px;
+    padding: 20px;
+}
+
+p {
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+
+
+div.azul {
+    background-color: blue;
+    width: 100%;
+    height: 30%;
+}
+
+div.rojo {
+    background-color: red;
+    width: 33.33%;
+    height: 400px;
+    float: left;
+}
+
+div.verde {
+    background-color: green;
+    width: 33.33%;
+    height: 400px;
+    float: left;
+}
+
+div.amarillo {
+    background-color: yellow;
+    width: 33.33%;
+    height: 400px;
+    float: left;
+}
+
+div.naranja {
+    background-color: orange;
+    width: 100%;
+    height: 700px;
+    padding: 400px;
+
+}
+
+
+
+#botonderecha {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#botonderecha img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+#botonizquierda {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#botonizquierda img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}

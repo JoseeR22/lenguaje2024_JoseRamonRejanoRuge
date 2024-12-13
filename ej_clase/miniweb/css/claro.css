@@ -80,7 +80,7 @@ main {
 }
 
 .enlacescuadrados:hover {
-    background-color: #FFA500; /* Cambio de color cuando se pasar el cursor */
+    background-color: #ff7300; /* Cambio de color cuando se pasar el cursor */
     color: white;
 }
 

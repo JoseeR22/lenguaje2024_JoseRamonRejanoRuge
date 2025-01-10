@@ -1,13 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="José Ramón Rejano Ruge">
-    <title>Resumen XML</title>
+    <title>Resumen de XML</title>
+    <style>
+        * {
+            text-align: center;
+            align-content: center;
+            align-items: center;
+            justify-items: center;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        section {
+            display: flex;
+            box-shadow: 0px 0px 8px rgb(0, 0, 0);
+            width: 1200px;
+            height: 100px;
+            box-sizing: border-box;
+            border-color: solid black 3px;
+            border-radius: 15px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: all 0.5s ease 0.5s;
+            margin-bottom: 20px;
+        }
+
+
+
+        section:hover {
+            background-color: rgb(217, 182, 128);
+            transition: background 0.2s ease;
+
+
+        }
+
+        body {
+
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+
+        }
+
+
+        .h2_1 {
+            position: absolute;
+            top: 8vh;
+
+        }
+
+        .h2_2 {
+            position: absolute;
+            top: 20vh;
+
+        }
+
+        .h2_3 {
+            position: absolute;
+            top: 33vh;
+        }
+
+
+        .p_1 {
+            position: absolute;
+            bottom: 80vh;
+            display: flex;
+        }
+
+        .p_2 {
+            position: absolute;
+            bottom: 67vh;
+            display: flex;
+            max-width: 1200px;
+        }
+
+        footer {
+            text-align: center;
+            background: #222;
+            color: #fff;
+            margin-top: 80px;
+            overflow: hidden;
+            position: absolute;
+            bottom: 50px;
+            right: 670px;
+        }
+    </style>
 </head>
+
 <body>
-    
-    
+    <header>
+        <h1>Resumen sobre conceptos clave de XML</h1>
+
+        <section>
+            <h2 class="h2_1">CONCEPTOS GENERALES</h2>
+            <p class="p_1">XML (Extensible Markup Language) es un lenguaje de marcado general definido por el W3C, cuyo
+                objetivo es
+                compartir datos entre sistemas.</p>
+        </section>
+    </header>
+
+    <section>
+        <h2 class="h2_2">CARACTERÍSTICAS PRINCIPALES</h2>
+        <p class="p_2">Sus reglas son estrictas:
+            -Bien formados: Deben cumplir las reglas del W3C.
+            -Distinción entre mayúsculas y minúsculas.
+            -Uso correcto de etiquetas de apertura y cierre.
+            -Atributos en comillas (simples o dobles).
+            -Comentarios: Igual que en html.
+        </p>
+    </section>
+
+    <section>
+        <h2 class="h2_3">APLICACIONES DE XML</h2>
+        <p class="p_3">
+            Usos prácticos en diversos contextos:
+            Catálogo de libros.
+            Agenda de contactos.
+            Configuración de aplicaciones.
+            Gestión de notas y calificaciones.
+
+        </p>
+    </section>
+
+    <footer>
+        <h3>&copy; 2024 Ejercicio de clase. Los derechos de José Ramón están reservados.</h3>
+    </footer>
+
+
 </body>
+
 </html>

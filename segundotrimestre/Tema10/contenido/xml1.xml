@@ -4,4 +4,7 @@
         <num_paginas>102</num_paginas>
 
     </libro>
+    <libro>
+        <num_paginas>200</num_paginas>
+    </libro>
 </catalogo>

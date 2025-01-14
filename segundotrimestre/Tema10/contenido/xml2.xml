@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE agenda [
+    <!ELEMENT agenda (contacto+)>
+<!ELEMENT contacto (nombre, telefono)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+]>
 <agenda>
 <contacto>
 <nombre>Jose</nombre>
 <telefono>643027985</telefono>
 </contacto>
 <contacto>
+<nombre>Alvaro</nombre>
+<telefono>623089000</telefono>
 </contacto>
 </agenda>

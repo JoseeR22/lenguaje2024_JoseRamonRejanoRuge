@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE menu [
+    <!ELEMENT menu (bebidas+,entrantes+,platos+,postres+,salsas+)>
+    <!ELEMENT bebidas (item+)>
+    <!ELEMENT entrantes (item+)>
+    <!ELEMENT platos (item+)>
+    <!ELEMENT postres (item+)>
+    <!ELEMENT salsas (item+)>
+    <!ELEMENT item (#PCDATA)>
+]>
+<menu>
+    <bebidas>
+        <item>Aquarius</item>
+        <item>Agua</item>
+        <item>Nestea</item>
+        <item>Coca-Cola</item>
+    </bebidas>
+    <entrantes>
+        <item>Patatas Bravas</item>
+        <item>Aceitunas</item>
+        <item>Croquetas de Rabo de Toro</item>
+        <item>Gambas al Ajillo</item>
+    </entrantes>
+    <platos>
+        <item>Carrilleras</item>
+        <item>Tortilla de Patatas</item>
+        <item>Solomillo de Cerdo</item>
+        <item>Churrasco de Pollo</item>
+        <item>San Jacobo</item>
+        <item>Flamenquin Casero</item>
+        <item>Pez Espada</item>
+        <item>Lomo Alto Gallego</item>
+        <item>Pulpo a la Gallega</item>
+    </platos>
+    <postres>
+        <item>Tarta de Queso</item>
+    </postres>
+    <salsas>
+        <item>Salsa Verde</item>
+        <item>Salsa Pedro Ximenez</item>
+        <item>Salsa Mojo Picon</item>
+        <item>Salsa Roquefort</item>
+
+    </salsas>
+</menu>

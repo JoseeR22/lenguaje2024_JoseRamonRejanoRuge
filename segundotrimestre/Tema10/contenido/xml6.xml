@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE ficha_tecnica [
+    <!ELEMENT ficha_tecnica (ficha+)>
+    <!ELEMENT ficha (marca, modelo, anyo, matricula, combustible, potencia)>
+    <!ELEMENT marca (#PCDATA)>
+    <!ELEMENT modelo (#PCDATA)>
+    <!ELEMENT anyo (#PCDATA)>
+    <!ELEMENT matricula (#PCDATA)>
+    <!ELEMENT combustible (#PCDATA)>
+    <!ELEMENT potencia (#PCDATA)>
+]>
+<ficha_tecnica>
+    <ficha>
+        <marca>Seat</marca>
+        <modelo>Leon 120d</modelo>
+        <anyo>2002</anyo>
+        <matricula>3000UYY</matricula>
+        <combustible>Diesel</combustible>
+        <potencia>92Kw</potencia>
+
+    </ficha>
+    <ficha>
+        <marca>Ranger Rover</marca>
+        <modelo>Evoque 2.5 TDI</modelo>
+        <anyo>2013</anyo>
+        <matricula>5200TTY</matricula>
+        <combustible>Diesel</combustible>
+        <potencia>120Kw</potencia>
+
+    </ficha>
+</ficha_tecnica>

@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE root-element [
-    <!ELEMENT root-element (#PCDATA)>
+<!DOCTYPE tarjeta_credito [
+    <!ELEMENT tarjeta_credito (tarjeta+)>
+    <!ELEMENT tarjeta (numero, titular, fecha_vencimiento, tipo, entidad)>
+    <!ELEMENT numero (#PCDATA)>
+    <!ELEMENT titular (#PCDATA)>
+    <!ELEMENT fecha_vencimiento (#PCDATA)>
+    <!ELEMENT tipo (#PCDATA)>
+    <!ELEMENT entidad (#PCDATA)>
 ]>
-<root-element>
-</root-element>
+<tarjeta_credito>
+    <tarjeta>
+        <numero>ES123456789</numero>
+        <titular>Juan Manuel Garcia Sanchez</titular>
+        <fecha_vencimiento>25/02/2028</fecha_vencimiento>
+        <tipo>fisica</tipo>
+        <entidad>4444</entidad>
+    </tarjeta>
+
+
+    <tarjeta>
+        <numero>ES567834785</numero>
+        <titular>Javier Antonio Rodriguez Figueroa</titular>
+        <fecha_vencimiento>25/02/2027</fecha_vencimiento>
+        <tipo>virtual</tipo>
+        <entidad>0000</entidad>
+    </tarjeta>
+</tarjeta_credito>
+    

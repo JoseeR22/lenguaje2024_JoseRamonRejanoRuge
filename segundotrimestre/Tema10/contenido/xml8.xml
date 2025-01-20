@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE notasDAW [
+    <!ELEMENT notasDAW (nota+)>
+    <!ELEMENT nota (alumno+,asignaturas+,trimestre+,notas+)>
+    <!ELEMENT alumno (#PCDATA)>
+    <!ELEMENT asignaturas (#PCDATA)>
+    <!ELEMENT trimestre (#PCDATA)>
+    <!ELEMENT notas (#PCDATA)>
+]>
+<notasDAW>
+    <nota>
+        <alumno>Rosa</alumno>
+        <asignaturas>Lengua, Mates, Fisica</asignaturas>
+        <trimestre>1 trimestre</trimestre>
+        <notas>5, 9, 10</notas>
+    </nota>
+    <nota>
+        <alumno>Javier</alumno>
+        <asignaturas>Geografia, EF, Quimica</asignaturas>
+        <trimestre>2 trimestre</trimestre>
+        <notas>7, 6.5, 1</notas>
+    </nota>
+</notasDAW>

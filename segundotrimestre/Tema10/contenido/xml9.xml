@@ -72,4 +72,20 @@
             <puntosVida>220</puntosVida>
         </estado>
     </pokemon>
+     <pokemon>
+        <nombre>Diglett</nombre>
+        <numeroPokedex>5</numeroPokedex>
+        <imagen>Básica</imagen>
+        <descripcion>Es un pokemon de tipo Tierra de fase primaria ya que su evolución es
+            Dugtrio</descripcion>
+        <tipo>Tierra</tipo>
+        <genero>Masculino</genero>
+        <estado>
+            <habilidades>Excavar</habilidades>
+            <habilidades>Cabezazo</habilidades>
+            <destreza numero="7">Dormir</destreza>
+            <nivel>14</nivel>
+            <fuerza potencia="50">1 punto</fuerza>
+        </estado>
+    </pokemon>
 </pokeDAW>

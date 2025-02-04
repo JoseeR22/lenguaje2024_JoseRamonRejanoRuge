@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE pokeDAW [
+    <!ELEMENT pokeDAW (pokemon)+>
+    <!ELEMENT pokemon (nombre,numeroPokedex,imagen,descripcion,tipo,genero,estado)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT numeroPokedex (#PCDATA)>
+    <!ELEMENT imagen (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT tipo (#PCDATA)>
+    <!ELEMENT genero (#PCDATA)>
+    <!ELEMENT estado (habilidades+,destreza,nivel,fuerza,faseEvolucion,puntosVida)>
+    <!ELEMENT habilidades (#PCDATA)>
+    <!ELEMENT destreza (#PCDATA)>
+    <!ELEMENT nivel (#PCDATA)>
+    <!ELEMENT fuerza (#PCDATA)>
+    <!ELEMENT faseEvolucion (#PCDATA)>
+    <!ELEMENT puntosVida (#PCDATA)>
+]>
+<pokeDAW>
+    <pokemon>
+        <nombre>Pikachu</nombre>
+        <numeroPokedex>125</numeroPokedex>
+        <imagen>Full ART</imagen>
+        <descripcion>Es un pokemon de tipo Electrico de fase Intermedia ya que su preevolución es
+            Pichu y su evolución es Raichu</descripcion>
+        <tipo>Electrico</tipo>
+        <genero>Masculino</genero>
+        <estado>
+            <habilidades>Rayo</habilidades>
+            <habilidades>Impactrueno</habilidades>
+            <destreza>Corriente Múltiple</destreza>
+            <nivel>18</nivel>
+            <fuerza>5 puntos</fuerza>
+            <faseEvolucion>Intermedia</faseEvolucion>
+            <puntosVida>120</puntosVida>
+        </estado>
+    </pokemon>
+    <pokemon>
+        <nombre>Squirtle</nombre>
+        <numeroPokedex>12</numeroPokedex>
+        <imagen>EX</imagen>
+        <descripcion>Es un pokemon de tipo Agua de fase primaria ya que su evolución intermedia es Wartortle y su última evolución es Blastoise</descripcion>
+        <tipo>Agua</tipo>
+        <genero>Masculino</genero>
+        <estado>
+            <habilidades>Pistola Agua</habilidades>
+            <habilidades>HidroBomba</habilidades>
+            <destreza>Burbuja Acuífera</destreza>
+            <nivel>11</nivel>
+            <fuerza>3 puntos</fuerza>
+            <faseEvolucion>Primaria</faseEvolucion>
+            <puntosVida>100</puntosVida>
+        </estado>
+    </pokemon>
+</pokeDAW>

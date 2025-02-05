@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE pokeDAW [
     <!ELEMENT pokeDAW (pokemon)+>
-    <!ELEMENT pokemon (nombre,numeroPokedex,imagen,descripcion,tipo,genero,estado)>
+    <!ELEMENT pokemon (nombre, numeroPokedex, imagen, descripcion, tipo, genero, estado)>
     <!ELEMENT nombre (#PCDATA)>
     <!ELEMENT numeroPokedex (#PCDATA)>
     <!ELEMENT imagen (#PCDATA)>

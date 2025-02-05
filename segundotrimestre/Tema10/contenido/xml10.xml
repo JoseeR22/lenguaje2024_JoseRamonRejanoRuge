@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE estacion_meteoro [
+    <!ELEMENT estacion_meteoro (datos_estacion)+>
+    <!ELEMENT datos_estacion (ubicacion, fecha, hora, temperatura, humedad, presion, viento, lluvia)>
+    <!ELEMENT ubicacion (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT hora (#PCDATA)>
+    <!ELEMENT temperatura (#PCDATA)>
+    <!ELEMENT humedad (#PCDATA)>
+    <!ELEMENT presion (#PCDATA)>
+    <!ELEMENT viento (#PCDATA)>
+    <!ELEMENT lluvia (#PCDATA)>
+]>
+<estacion_meteoro>
+    <datos_estacion>
+        <ubicacion>Espanya</ubicacion>
+        <fecha>25 enero 2008</fecha>
+        <hora>12:00</hora>
+        <temperatura>22º</temperatura>
+        <humedad>5g/m³</humedad>
+        <presion>250Pa</presion>
+        <viento>Fuerte</viento>
+        <lluvia>Torrencial</lluvia>
+    </datos_estacion>
+
+    <datos_estacion>
+        <ubicacion>Francia</ubicacion>
+        <fecha>22 enero 2021</fecha>
+        <hora>10:00</hora>
+        <temperatura>-2º</temperatura>
+        <humedad>50g/m³</humedad>
+        <presion>450Pa</presion>
+        <viento>Debil</viento>
+        <lluvia>Moderada</lluvia>
+    </datos_estacion>
+
+</estacion_meteoro>

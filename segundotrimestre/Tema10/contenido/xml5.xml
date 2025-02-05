@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE tarjeta_credito [
     <!ELEMENT tarjeta_credito (tarjeta+)>
     <!ELEMENT tarjeta (numero, titular, fecha_vencimiento, tipo, entidad)>

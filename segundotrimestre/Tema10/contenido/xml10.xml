@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE estacion_meteoro [
     <!ELEMENT estacion_meteoro (datos_estacion)+>
     <!ELEMENT datos_estacion (ubicacion, fecha, hora, temperatura, humedad, presion, viento, lluvia)>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE tiendaOnline [
+    <!ELEMENT tiendaOnline (productos)+>
+    <!ELEMENT productos (precio, cantidad, id, tipo)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT tipo (#PCDATA)>
+]>
+<tiendaOnline>
+    <productos>
+        <precio>20</precio>
+        <cantidad>2</cantidad>
+        <id>1</id>
+        <tipo>Lenceria</tipo>
+    </productos>
+     <productos>
+        <precio>2000</precio>
+        <cantidad>1</cantidad>
+        <id>2</id>
+        <tipo>Informatica</tipo>
+    </productos>
+     <productos>
+        <precio>1.50</precio>
+        <cantidad>1</cantidad>
+        <id>3</id>
+        <tipo>Bolleria</tipo>
+    </productos>
+</tiendaOnline>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE aplicacion_ficticia [
     <!ELEMENT aplicacion_ficticia (informacion+,usuario+,base_datos+, parametros+)>
     <!ELEMENT informacion (nombre+, version+, autor+)>

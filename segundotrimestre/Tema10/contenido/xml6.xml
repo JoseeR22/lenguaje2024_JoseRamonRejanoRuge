@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE ficha_tecnica [
     <!ELEMENT ficha_tecnica (ficha+)>
     <!ELEMENT ficha (marca, modelo, anyo, matricula, combustible, potencia)>

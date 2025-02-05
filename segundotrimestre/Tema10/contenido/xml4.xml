@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE dni [
     <!ELEMENT dni (persona+)>
     <!ELEMENT persona (id, nombre, apellidos, sexo, nacionalidad, nacimiento, emision, validez, num_soporte, domicilio, lugar_nacimiento, hijo_de)>

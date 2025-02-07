@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dni xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../contenido/xsd/xml4.xsd">
+
+    <persona>
+        <id>12345678Z</id>
+        <nombre>Triana</nombre>
+        <apellidos>Rejano Ruge</apellidos>
+        <sexo>H</sexo>
+        <nacionalidad>Palma del Rio</nacionalidad>
+        <nacimiento>25/01/2006</nacimiento>
+        <emision>28/10/2021</emision>
+        <validez>28/10/2026</validez>
+        <num_soporte>CAS109954</num_soporte>
+        <domicilio>Calle Genil 6 </domicilio>
+        <lugar_nacimiento>Palma del Rio(Cordoba)</lugar_nacimiento>
+        <hijo_de>José María y Manuela</hijo_de>
+    </persona>
+
+    <persona>
+        <id>31894626C</id>
+        <nombre>Manuel</nombre>
+        <apellidos>Jimenez Segura</apellidos>
+        <sexo>M</sexo>
+        <nacionalidad>Fuente Carreteros</nacionalidad>
+        <nacimiento>20/03/2000</nacimiento>
+        <emision>27/10/2022</emision>
+        <validez>27/10/2026</validez>
+        <num_soporte>ESP109911</num_soporte>
+        <domicilio>Calle Barcelona 6 </domicilio>
+        <lugar_nacimiento>Fuente Carreteros(Cordoba)</lugar_nacimiento>
+        <hijo_de>Maria y Roberto</hijo_de>
+    </persona>
+</dni>

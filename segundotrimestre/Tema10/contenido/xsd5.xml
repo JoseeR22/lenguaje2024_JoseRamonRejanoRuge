@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tarjeta_credito xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../contenido/xsd/xml5.xsd">
+
+    <tarjeta>
+        <numero>ES123456789</numero>
+        <titular>Juan Manuel Garcia Sanchez</titular>
+        <fecha_vencimiento>25/02/2028</fecha_vencimiento>
+        <tipo>fisica</tipo>
+        <entidad>4444</entidad>
+    </tarjeta>
+
+
+    <tarjeta>
+        <numero>ES567834785</numero>
+        <titular>Javier Antonio Rodriguez Figueroa</titular>
+        <fecha_vencimiento>25/02/2027</fecha_vencimiento>
+        <tipo>virtual</tipo>
+        <entidad>0000</entidad>
+    </tarjeta>
+</tarjeta_credito>
+    

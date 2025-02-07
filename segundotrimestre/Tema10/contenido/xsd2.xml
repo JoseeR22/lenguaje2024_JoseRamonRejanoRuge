@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agenda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../contenido/xsd/xml2.xsd">
+
+    <contacto>
+        <nombre>Jose</nombre>
+        <telefono>643027985</telefono>
+    </contacto>
+    <contacto>
+        <nombre>Alvaro</nombre>
+        <telefono>623089000</telefono>
+    </contacto>
+</agenda>

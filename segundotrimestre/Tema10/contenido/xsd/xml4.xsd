@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="dni">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="persona" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="xs:string"/>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="apellidos" type="xs:string"/>
+              <xs:element name="sexo" type="xs:string"/>
+              <xs:element name="nacionalidad" type="xs:string"/>
+              <xs:element name="nacimiento" type="xs:string"/>
+              <xs:element name="emision" type="xs:string"/>
+              <xs:element name="validez" type="xs:string"/>
+              <xs:element name="num_soporte" type="xs:string"/>
+              <xs:element name="domicilio" type="xs:string"/>
+              <xs:element name="lugar_nacimiento" type="xs:string"/>
+              <xs:element name="hijo_de" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

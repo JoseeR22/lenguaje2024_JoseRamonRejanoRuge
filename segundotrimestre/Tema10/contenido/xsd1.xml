@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../contenido/xsd/xml1.xsd">
+    <libro>
+        <nombre>Fenix</nombre>
+        <autor>Jorge Perez</autor>
+        <anyo_publicacion>1982</anyo_publicacion>
+        <genero>trama</genero>
+        <precio>19.99</precio>
+        <num_paginas>102</num_paginas>
+
+    </libro>
+    <libro>
+        <nombre>Los Juegos del Hambre</nombre>
+        <autor>Francisco Rodriguez</autor>
+        <anyo_publicacion>1990</anyo_publicacion>
+        <genero>Drama</genero>
+        <precio>7.99</precio>
+        <num_paginas>200</num_paginas>
+    </libro>
+</catalogo>
+
+
+    

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ficha_tecnica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../contenido/xsd/xml6.xsd">
+
+
+    <ficha>
+        <marca>Seat</marca>
+        <modelo>Leon 120d</modelo>
+        <anyo>2002</anyo>
+        <matricula>3000UYY</matricula>
+        <combustible>Diesel</combustible>
+        <potencia>92Kw</potencia>
+
+    </ficha>
+    <ficha>
+        <marca>Ranger Rover</marca>
+        <modelo>Evoque 2.5 TDI</modelo>
+        <anyo>2013</anyo>
+        <matricula>5200TTY</matricula>
+        <combustible>Diesel</combustible>
+        <potencia>120Kw</potencia>
+
+    </ficha>
+</ficha_tecnica>

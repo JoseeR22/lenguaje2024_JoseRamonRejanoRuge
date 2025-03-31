@@ -1,3 +1,5 @@
+@import 'animate.css';
+
 body {
     margin: 0;
     padding: 0;
@@ -11,6 +13,7 @@ body {
     text-align: center;
     margin-top: 10%;
     gap: 20px;
+    margin-bottom: 10%;
 
 }
 
@@ -45,7 +48,7 @@ body {
 
 
 .ej {
-    animation: degradado 3s infinite;
+    background-color: #b9b8b8;
     padding: 20px;
     border-radius: 5px;
     -webkit-box-shadow: 10px 10px 30px -10px rgba(0, 0, 0, 0.75);
@@ -55,6 +58,11 @@ body {
     max-width: 80%;
     min-width: 50%;
 
+}
+
+.animate__animated {
+    animation-duration: 1s;
+    animation:alternate;
 }
 
 .ej a h2:hover{
@@ -74,4 +82,13 @@ a {
 
 h2 {
     color: #000000;
+}
+
+.pie{
+    background-color: hsl(211, 87%, 41%);
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+
 }

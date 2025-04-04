@@ -1,0 +1,50 @@
+.calculadora {
+    width: 300px;
+    height: 380px;
+    border: 1px solid #000;
+    margin: 0px auto;
+    box-shadow: 0px 0px 10px #000;
+    background-color: #ccc;
+}
+
+.pantalla {
+    height: 70px;
+    padding: 10px;
+}
+
+#resultado {
+    width: 95%;
+    height: 70px;
+    font-size: 50px;
+    border: none;
+    background-color: #21803b;
+    text-align: right;
+
+}
+
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+}
+
+button {
+    font-size: 30px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid 1px #000;
+    box-shadow: 0px 0px 5px #000;   
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+#igual{
+    margin:0;
+    grid-column: span 2;
+
+}

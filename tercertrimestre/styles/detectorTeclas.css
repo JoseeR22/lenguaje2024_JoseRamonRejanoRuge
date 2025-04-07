@@ -94,11 +94,33 @@ h2 {
     z-index: 1;
     opacity: 90%;
     bottom: 0;
+    
 
 }
 
 html{
     background-color: #eeeeee;
 }
+
+
+button{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 150px !important;
+    margin-bottom: 150px !important;
+    border: 10px solid #000000;
+    background-color: aliceblue;
+    box-shadow: #000000 0px 0px 10px 0px;
+    border-radius: 3px;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    
+ 
+    
+    
+}
+
 
 

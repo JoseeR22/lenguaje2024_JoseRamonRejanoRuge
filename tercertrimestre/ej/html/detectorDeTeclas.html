@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de teclas</title>
+    <link rel="stylesheet" href="../../styles/detectorTeclas.css">
+</head>
+
+<body>
+    <main>
+        <header class="encabezado">
+            <div class="logo">
+                <img src="../../images/medac.gif" alt="Logo de la escuela">
+            </div>
+            <div class="titulo">
+                <h1>Detector de teclas</h1>
+            </div>
+        </header>
+
+
+        <div class="general">
+            <button class="button"></button>
+
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+
+
+                const button = document.querySelector(".button");
+
+
+                document.addEventListener("keydown", (event) => {
+                    const teclaPresionada = event.key;
+
+
+                    button.textContent = `Has presionado la tecla: ${teclaPresionada.toUpperCase()}`;
+
+
+                    if (!dialog.open) {
+                        dialog.showModal();
+                    }
+                });
+            });
+        </script>
+
+
+
+
+
+    </main>
+
+
+
+
+</body>
+<footer class="pie">
+    <div>
+        <div>
+            <p>Derechos reservados &copy; 2025</p>
+        </div>
+
+        <div>
+            <p>Creado por: José Ramón</p>
+        </div>
+    </div>
+</footer>
+
+</html>

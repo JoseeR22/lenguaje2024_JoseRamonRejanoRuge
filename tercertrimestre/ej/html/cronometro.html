@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro</title>
+    <link rel="stylesheet" href="../../styles/cronometro.css">
+</head>
+
+<body>
+    <main>
+        <header class="encabezado">
+            <div class="logo">
+                <img src="../../images/medac.gif" alt="Logo de la escuela">
+            </div>
+            <div class="titulo">
+                <h1>Cronómetro</h1>
+            </div>
+        </header>
+
+        <div class="general">
+            <button class="reanudar">Reanudar</button>
+            <button class="parar">Parar</button>
+            <button class="reiniciar">Reiniciar</button>
+            <div class="cronometro">Tiempo: 0 segundos</div>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const reanudar = document.querySelector(".reanudar");
+                const parar = document.querySelector(".parar");
+                const reiniciar = document.querySelector(".reiniciar");
+                const cronometro = document.querySelector(".cronometro");
+
+                let tiempo = 0;
+                let intervalo;
+
+                function actualizarCronometro() {
+                    tiempo++;
+                    cronometro.textContent = `Tiempo: ${tiempo} segundos`;
+                }
+
+                reanudar.addEventListener("click", () => {
+                    if (!intervalo) {
+                        intervalo = setInterval(actualizarCronometro, 1000);
+                    }
+                });
+
+                parar.addEventListener("click", () => {
+                    clearInterval(intervalo);
+                    intervalo = null;
+                });
+
+                reiniciar.addEventListener("click", () => {
+                    clearInterval(intervalo);
+                    intervalo = null;
+                    tiempo = 0;
+                    cronometro.textContent = `Tiempo: ${tiempo} segundos`;
+                });
+            });
+        </script>
+    </main>
+
+    <footer class="pie">
+        <div>
+            <div>
+                <p>Derechos reservados &copy; 2025</p>
+            </div>
+            <div>
+                <p>Creado por: José Ramón</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -3,16 +3,38 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Asegura que el contenido esté centrado verticalmente */
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 0%;
+    height: 0%;
+    background-color: none;
+    
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 
 .general {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 150px !important;
-    margin-bottom: 150px !important;
+    margin: 0; /* Elimina márgenes innecesarios */
+    padding: 20px; /* Agrega un poco de espacio interno */
+    justify-content: center; /* Centra verticalmente el contenido interno */
+    align-items: center; /* Centra horizontalmente el contenido interno */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    gap: 5px; /* Espacio entre los elementos internos */
 }
-
 .encabezado {
     display: flex;
     justify-content: center;
@@ -90,7 +112,7 @@ h2 {
     background-color: #0e66c5;
     padding: 20px;
     width: 100%;
-    margin: 0;
+   position: fixed;
     z-index: 1;
     opacity: 90%;
     bottom: 0;

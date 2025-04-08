@@ -1,8 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+   
+}
+
+
+.general {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 150px !important;
+    margin-bottom: 150px !important;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: center;
+    background-color: #0e66c5;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    opacity: 90%;
+    top: 0;
+    margin: 0;
+}
+
+.titulo h1 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+@keyframes degradado {
+    0% {
+        background-color: #ffffff;
+    }
+
+    50% {
+        background-color: #b5b5b5;
+    }
+
+    100% {
+        background-color: #6f6f6f;
+    }
+
+}
+
+
+.ej {
+    background-color: #b9b8b8;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 30px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 30px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 30px -10px rgba(0, 0, 0, 0.75);
+    margin: 20px auto;
+    max-width: 80%;
+    min-width: 50%;
+
+}
+
+.animate__animated {
+    animation-duration: 1s;
+    animation: alternate;
+}
+
+.ej a h2:hover {
+    color: #0e66c5;
+}
+
+
+img {
+    max-width: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    color: #000000;
+}
+
+.pie {
+    display: flex;
+    justify-content: center;
+    background-color: #0e66c5;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    opacity: 90%;
+    bottom: 0;
+
+}
+
+html {
+    background-color: #eeeeee;
+}
+
+
 .calculadora {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
     width: 300px;
     height: 380px;
     border: 1px solid #000;
-    margin: 0px auto;
     box-shadow: 0px 0px 10px #000;
     background-color: #ccc;
 }
@@ -36,15 +151,15 @@ button {
     border-radius: 5px;
     cursor: pointer;
     border: solid 1px #000;
-    box-shadow: 0px 0px 5px #000;   
+    box-shadow: 0px 0px 5px #000;
 }
 
 button:hover {
     background-color: #ddd;
 }
 
-#igual{
-    margin:0;
+#igual {
+    margin: 0;
     grid-column: span 2;
 
 }

@@ -1,15 +1,46 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #dbeafe, #fef9c3);
+    color: #333;
 }
 
 .general {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     margin-top: 150px !important;
     margin-bottom: 150px !important;
+    width: 90%;
+    max-width: 800px;
+}
+
+.general li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    margin: 10px 0;
+    background: #ffffff;
+    border-left: 6px solid #0e66c5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    font-size: 1.1rem;
+}
+
+.general li:hover {
+    background-color: #e0f2fe;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #0e66c5;
+    margin-right: 10px;
 }
 
 .encabezado {
@@ -26,38 +57,12 @@ body {
 }
 
 .titulo h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #ffffff;
-}
-
-@keyframes degradado {
-    0% {
-        background-color: #ffffff;
-    }
-
-    50% {
-        background-color: #b5b5b5;
-    }
-
-    100% {
-        background-color: #6f6f6f;
-    }
-
+    font-weight: 600;
 }
 
 
-.ej {
-    background-color: #b9b8b8;
-    padding: 20px;
-    border-radius: 5px;
-    -webkit-box-shadow: 10px 10px 30px -10px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 30px -10px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 30px -10px rgba(0, 0, 0, 0.75);
-    margin: 20px auto;
-    max-width: 80%;
-    min-width: 50%;
-
-}
 
 .animate__animated {
     animation-duration: 1s;
@@ -67,7 +72,6 @@ body {
 .ej a h2:hover {
     color: #0e66c5;
 }
-
 
 img {
     max-width: 80px;
@@ -93,9 +97,16 @@ h2 {
     z-index: 1;
     opacity: 90%;
     bottom: 0;
-
+    margin: 0;
+    color: white;
+    font-size: 0.9rem;
 }
 
-html{
-    background-color: #eeeeee;
+
+/* Responsivo de JR */
+@media (max-width: 600px) {
+    .general li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

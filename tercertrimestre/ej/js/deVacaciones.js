@@ -31,9 +31,12 @@ destinos.forEach((destino) => {
         destino.appendChild(unicornio);
         unicornio.style.display = "block";
         unicornio.style.position = "absolute";
-        unicornio.style.top = "50%";
+        unicornio.style.top = "65%";
         unicornio.style.left = "50%";
         unicornio.style.transform = "translate(-50%, -50%)";
+        //al arrastrar el unicornio a un destino, el unicornio tiene que cambiar de tamaño
+        unicornio.style.width = "100px";
+        unicornio.style.height = "100px";
 
         const lugar = destino.dataset.lugar;
         mensaje.textContent = `¡El unicornio se ha ido a la ${lugar.toLowerCase()}!`;

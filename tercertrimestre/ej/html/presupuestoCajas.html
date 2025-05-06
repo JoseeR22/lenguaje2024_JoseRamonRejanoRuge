@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto de Cajas</title>
+    <link rel="stylesheet" href="../../styles/presupuestoCajas.css">
+</head>
+
+<body>
+    <main>
+        <header class="encabezado">
+            <div class="logo">
+                <img src="../../images/medac.gif" alt="Logo de la escuela" class="header">
+            </div>
+            <div class="titulo">
+                <h1>Presupuesto de Cajas</h1>
+            </div>
+        </header>
+
+        <section class="general">
+            <div class="formulario"
+                style="background-color:#fff;padding:20px;max-width:400px;margin:0 auto;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,0.2);">
+                <h3>Sección de Cálculo</h3>
+
+                <label for="tipo">Tipo de elemento:</label>
+                <select id="tipo">
+                    <option value="caja">Caja</option>
+                    <option value="cilindro">Cilindro</option>
+                </select>
+
+                <div id="campos">
+                    <label>Ancho (cm):</label>
+                    <input type="number" id="ancho"><br>
+                    <label>Alto (cm):</label>
+                    <input type="number" id="alto"><br>
+                    <label>Largo (cm):</label>
+                    <input type="number" id="largo"><br>
+                </div>
+
+                <label>Material:</label>
+                <select id="material">
+                    <option value="plastico">Plástico</option>
+                    <option value="carton">Cartón</option>
+                    <option value="madera">Madera</option>
+                </select><br><br>
+
+                <button onclick="calcular()">Calcular</button>
+                <p id="resultado"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <div>
+            <p>Derechos reservados &copy; 2025</p>
+            <p>Creado por: José Ramón</p>
+        </div>
+    </footer>
+
+    <script>
+        const tipo = document.getElementById('tipo');
+        const campos = document.getElementById('campos');
+        const resultado = document.getElementById('resultado');
+
+        tipo.addEventListener('change', () => {
+            if (tipo.value === 'caja') {
+                campos.innerHTML = `
+          <label>Ancho (cm):</label>
+          <input type="number" id="ancho"><br>
+          <label>Alto (cm):</label>
+          <input type="number" id="alto"><br>
+          <label>Largo (cm):</label>
+          <input type="number" id="largo"><br>`;
+            } else {
+                campos.innerHTML = `
+          <label>Radio (cm):</label>
+          <input type="number" id="radio"><br>
+          <label>Altura (cm):</label>
+          <input type="number" id="altura"><br>`;
+            }
+        });
+
+        function calcular() {
+            const mat = document.getElementById('material').value;
+            let volumen = 0;
+            let valido = true;
+
+            if (tipo.value === 'caja') {
+                const a = parseFloat(document.getElementById('ancho').value);
+                const h = parseFloat(document.getElementById('alto').value);
+                const l = parseFloat(document.getElementById('largo').value);
+                const dimensiones = [a, h, l].sort((x, y) => x - y);
+
+                if (dimensiones.some(d => d < 5 || d > 100)) {
+                    valido = false;
+                    resultado.innerText = "❌ Dimensión fuera de límites (5-100 cm).";
+                } else if (dimensiones[2] / dimensiones[0] > 5) {
+                    valido = false;
+                    resultado.innerText = "❌ Relación desproporcionada entre dimensiones.";
+                } else {
+                    volumen = a * h * l;
+                }
+
+            } else {
+                const r = parseFloat(document.getElementById('radio').value);
+                const h = parseFloat(document.getElementById('altura').value);
+                if (r < 5 || h < 5 || r > 100 || h > 100) {
+                    valido = false;
+                    resultado.innerText = "❌ Dimensión fuera de límites (5-100 cm).";
+                } else {
+                    volumen = Math.PI * r * r * h;
+                }
+            }
+
+            if (valido) {
+                let precioPorCm3 = mat === "plastico" ? 0.05 : mat === "carton" ? 0.02 : 0.08;
+                let total = volumen * precioPorCm3;
+                resultado.innerText = "✅ Precio total: " + total.toFixed(2) + " €";
+            }
+        }
+    </script>
+</body>
+
+</html>

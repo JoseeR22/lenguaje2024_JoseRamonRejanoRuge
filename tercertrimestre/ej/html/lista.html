@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Aqui debes enlazar el css -->
+    <title>Lista de productos</title>
+    <link rel="stylesheet" href="../../styles/lista.css">
+</head>
+
+<body>
+    <main>
+        <header class="encabezado">
+            <div class="logo">
+                <img src="../../images/medac.gif" alt="Logo de la escuela">
+            </div>
+            <div class="titulo">
+                <h1>Tercer Trimestre</h1>
+            </div>
+
+        </header>
+
+        <div class="container">
+            <div class="datos" id="datos">
+                <h2>Producto para añadir </h2>
+                <label for="producto">Producto:</label>
+                <br>
+                <input type="text" id="producto" placeholder="Producto" value="patatas">
+                <br>
+                <label for="precio">Precio:</label><br><input type="number" id="precio" placeholder="Precio" value="10">
+                <br>
+                <label for="cantidad">Cantidad:</label>
+                <br>
+                <input type="number" id="cantidad" placeholder="Cantidad" value="2">
+                <br>
+                <button id="botonAdd">Añadir</button>
+
+            </div>
+            <div class="lista" id="lista">
+                <h2>lista</h2>
+                <!-- El sigiente div es un ejemplo, lo puedes eliminar al final-->
+                <div class="lista-item"><span>(ejemplo)Manzanas: Cantidad 230 subtotal: </span> <span> 500</span>€</div>
+            </div>
+            <div class="total" id="total">
+                <h2>Total</h2>
+                <div> Suma Total: <span id="sumaTotal">0</span></div>
+            </div>
+        </div>
+        <div class="boton-salir">
+            <a href="../../index.html">Salir</a>
+        </div>
+
+        <!-- Aqui debes añadir el archivo del codigo javascript-->
+        <script>
+            const botonAdd = document.getElementById("botonAdd");
+            const lista = document.getElementById("lista");
+            const sumaTotal = document.getElementById("sumaTotal");
+
+            let total = 0;
+
+            botonAdd.addEventListener("click", () => {
+                const producto = document.getElementById("producto").value;
+                const precio = parseFloat(document.getElementById("precio").value);
+                const cantidad = parseInt(document.getElementById("cantidad").value);
+
+                if (!producto || isNaN(precio) || isNaN(cantidad) || cantidad <= 0 || precio < 0) {
+                    alert("Introduce valores válidos.");
+                    return;
+                }
+
+                const subtotal = precio * cantidad;
+                total += subtotal;
+
+                const item = document.createElement("div");
+                item.className = "lista-item";
+                item.innerHTML = `<span>${producto}: Cantidad ${cantidad}, Subtotal: </span> <span>${subtotal.toFixed(2)}</span> €`;
+                lista.appendChild(item);
+
+                sumaTotal.textContent = total.toFixed(2);
+            });
+        </script>
+    </main>
+
+
+</body>
+<footer class="pie">
+    <div>
+        <div>
+            <p>Derechos reservados &copy; 2025</p>
+        </div>
+
+        <div>
+            <p>Creado por: José Ramón</p>
+        </div>
+    </div>
+</footer>
+
+</html>

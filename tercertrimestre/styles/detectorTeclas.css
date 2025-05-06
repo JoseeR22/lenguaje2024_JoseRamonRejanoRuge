@@ -111,7 +111,7 @@ h2 {
     background-color: #0e66c5;
     padding: 20px;
     width: 100%;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     opacity: 90%;
     bottom: 0;
@@ -137,6 +137,27 @@ button{
     margin: 0 auto;
     padding: 0 auto; 
     
+}
+
+.boton-salir {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.boton-salir a {
+    color: #0e66c5;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #0e66c5;
+    border-radius: 5px;
+    background-color: #ffffff;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.boton-salir a:hover {
+    background-color: #d6e9ff;
 }
 
 

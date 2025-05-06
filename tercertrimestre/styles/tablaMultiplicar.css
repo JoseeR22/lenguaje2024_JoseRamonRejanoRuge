@@ -97,7 +97,7 @@ h2 {
     background-color: #0e66c5;
     padding: 20px;
     width: 100%;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     opacity: 90%;
     bottom: 0;

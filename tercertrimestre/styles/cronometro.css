@@ -7,7 +7,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    flex-direction: column; /* Asegura que el contenido esté centrado verticalmente */
+    flex-direction: column;
+    /* Asegura que el contenido esté centrado verticalmente */
 }
 
 main {
@@ -18,7 +19,7 @@ main {
     width: 0%;
     height: 0%;
     background-color: none;
-    
+
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -28,13 +29,20 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 0; /* Elimina márgenes innecesarios */
-    padding: 20px; /* Agrega un poco de espacio interno */
-    justify-content: center; /* Centra verticalmente el contenido interno */
-    align-items: center; /* Centra horizontalmente el contenido interno */
-    width: 100%; /* Asegura que ocupe todo el ancho disponible */
-    gap: 5px; /* Espacio entre los elementos internos */
+    margin: 0;
+    /* Elimina márgenes innecesarios */
+    padding: 20px;
+    /* Agrega un poco de espacio interno */
+    justify-content: center;
+    /* Centra verticalmente el contenido interno */
+    align-items: center;
+    /* Centra horizontalmente el contenido interno */
+    width: 100%;
+    /* Asegura que ocupe todo el ancho disponible */
+    gap: 5px;
+    /* Espacio entre los elementos internos */
 }
+
 .encabezado {
     display: flex;
     justify-content: center;
@@ -112,15 +120,34 @@ h2 {
     background-color: #0e66c5;
     padding: 20px;
     width: 100%;
-   position: fixed;
+    position: absolute;
     z-index: 1;
     opacity: 90%;
     bottom: 0;
 
 }
 
-html{
+html {
     background-color: #eeeeee;
 }
 
+.boton-salir {
+    margin-top: 30px;
+    text-align: center;
+}
 
+.boton-salir a {
+    color: #0e66c5;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #0e66c5;
+    border-radius: 5px;
+    background-color: #ffffff;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.boton-salir a:hover {
+    background-color: #d6e9ff;
+}

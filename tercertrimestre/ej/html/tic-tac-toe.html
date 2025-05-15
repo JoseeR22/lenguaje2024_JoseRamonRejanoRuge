@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>TIC-TAC-TOE</title>
+  <link rel="stylesheet" href="../../styles/tresEnrayas.css">
+</head>
+
+<body class="body">
+
+  <div id="titulo">
+    <h1>
+      TIC TAC TOE
+    </h1>
+
+  </div>
+  <div class="tablero">
+    <div class="casilla" onclick="jugada(1)">0</div>
+    <div class="casilla" onclick="jugada(2)">1</div>
+    <div class="casilla" onclick="jugada(3)">2</div>
+    <div class="casilla" onclick="jugada(4)">3</div>
+    <div class="casilla" onclick="jugada(5)">4</div>
+    <div class="casilla" onclick="jugada(6)">5</div>
+    <div class="casilla" onclick="jugada(7)">6</div>
+    <div class="casilla" onclick="jugada(8)">7</div>
+    <div class="casilla" onclick="jugada(9)">8</div>
+  </div>
+  <div class="turno">
+    <div>Jugador 1:<button id="jugador1"></button></div>
+    <div>Jugador 2:<button id="jugador2"></div>
+  </div>
+
+  <div class="btn">
+    <button id="reset" onclick="reset()">RESET</button>
+    <button id="Otra" onclick="otra()">OTRA</button>
+  </div>
+  <!-- <div class="dialog">Hola</div> -->
+
+  <script src="../js/tresEnrayas.js"></script>
+
+</body>
+
+</html>

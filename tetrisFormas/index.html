@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios JavaScript</title>
+    <link rel="stylesheet" href="../tetrisFormas/css/style.css">
+</head>
+
+<body>
+    <h1>Ejercicios JavaScript</h1>
+
+    <!-- Figuras plantilla -->
+    <div id="formas-iniciales">
+        <div class="forma cuadrado rojo" data-forma="cuadrado"></div>
+        <div class="forma circulo blanco" data-forma="circulo"></div>
+        <div class="forma triangulo blanco" data-forma="triangulo"></div>
+    </div>
+
+    <!-- Zona de juego -->
+    <div id="zona-juego"></div>
+
+    <!-- Tabla de conteo -->
+    <table>
+        <caption>Figura / Color</caption>
+        <thead>
+            <tr>
+                <th>Figura / Color</th>
+                <th>Blanco</th>
+                <th>Amarillo</th>
+                <th>Verde</th>
+                <th>Rojo</th>
+                <th>Azul</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-conteo"></tbody>
+    </table>
+
+    <script src="../tetrisFormas/js/script.js"></script>
+</body>
+
+</html>

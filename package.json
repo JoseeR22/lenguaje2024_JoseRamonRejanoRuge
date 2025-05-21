@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "animate.css": "^4.1.1"
-  }
+  },
+  "name": "lenguaje2024_joseramonrejanoruge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseeR22/lenguaje2024_JoseRamonRejanoRuge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoseeR22/lenguaje2024_JoseRamonRejanoRuge/issues"
+  },
+  "homepage": "https://github.com/JoseeR22/lenguaje2024_JoseRamonRejanoRuge#readme",
+  "description": ""
 }
